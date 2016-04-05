@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd9fcf4d-b2e8-46d7-b9f4-98e481756caa" name="Default" comment="Finished the basic socket example in book">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep3.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep4.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/onethr.py" />
+    <list default="true" id="fd9fcf4d-b2e8-46d7-b9f4-98e481756caa" name="Default" comment="complete samples of thread">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlackHatPython/Chapter2/bhnet.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlackHatPython/Chapter2/connectBaidu.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlackHatPython/Chapter2/tcpClient.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlackHatPython/Chapter2/tcpServer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BlackHatPython/Chapter2/udpClient.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BlackHatPython/connectBaidu.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BlackHatPython/tcpClient.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BlackHatPython/tcpServer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BlackHatPython/udpClient.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -21,17 +25,19 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Python$udpClient.coverage" NAME="udpClient Coverage Results" MODIFIED="1459759888118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BlackHatPython" />
+    <SUITE FILE_PATH="coverage/Python$tcpClient.coverage" NAME="tcpClient Coverage Results" MODIFIED="1459759252885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BlackHatPython" />
+    <SUITE FILE_PATH="coverage/Python$mtsleep3.coverage" NAME="mtsleep3 Coverage Results" MODIFIED="1459786641516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
     <SUITE FILE_PATH="coverage/Python$mtsleep2.coverage" NAME="mtsleep2 Coverage Results" MODIFIED="1459783717940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
     <SUITE FILE_PATH="coverage/Python$mtsleep5.coverage" NAME="mtsleep5 Coverage Results" MODIFIED="1459787334159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
     <SUITE FILE_PATH="coverage/Python$tcpServer.coverage" NAME="tcpServer Coverage Results" MODIFIED="1459763233130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BlackHatPython" />
     <SUITE FILE_PATH="coverage/Python$onethr.coverage" NAME="onethr Coverage Results" MODIFIED="1459781484601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
-    <SUITE FILE_PATH="coverage/Python$udpClient.coverage" NAME="udpClient Coverage Results" MODIFIED="1459759888118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BlackHatPython" />
-    <SUITE FILE_PATH="coverage/Python$tcpClient.coverage" NAME="tcpClient Coverage Results" MODIFIED="1459759252885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BlackHatPython" />
-    <SUITE FILE_PATH="coverage/Python$mtsleep3.coverage" NAME="mtsleep3 Coverage Results" MODIFIED="1459786641516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
     <SUITE FILE_PATH="coverage/Python$tsTserv.coverage" NAME="tsTserv Coverage Results" MODIFIED="1459742052888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 16: Socket Programming" />
     <SUITE FILE_PATH="coverage/Python$mtsleep1.coverage" NAME="mtsleep1 Coverage Results" MODIFIED="1459782826495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
+    <SUITE FILE_PATH="coverage/Python$bhnet__1_.coverage" NAME="bhnet (1) Coverage Results" MODIFIED="1459867640732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../BHP-Code/Chapter2" />
     <SUITE FILE_PATH="coverage/Python$tsTcInt.coverage" NAME="tsTcInt Coverage Results" MODIFIED="1459740354906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 16: Socket Programming" />
     <SUITE FILE_PATH="coverage/Python$mtsleep4.coverage" NAME="mtsleep4 Coverage Results" MODIFIED="1459786649929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
+    <SUITE FILE_PATH="coverage/Python$bhnet.coverage" NAME="bhnet Coverage Results" MODIFIED="1459868855423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BlackHatPython" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -42,60 +48,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="onethr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/onethr.py">
+      <file leaf-file-name="threading.py" pinned="false" current-in-tab="true">
+        <entry file="file:///usr/lib/python2.7/threading.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.4830827">
+              <caret line="766" column="28" selection-start-line="766" selection-start-column="28" selection-end-line="767" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mtsleep3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep3.py">
+      <file leaf-file-name="bhnet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
-              <folding>
-                <element signature="e#23#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mtsleep4.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.071428575">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="18" />
-              <folding>
-                <element signature="e#23#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mtsleep1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-              <folding>
-                <element signature="e#23#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mtsleep2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
-              <folding>
-                <element signature="e#23#36#0" expanded="true" />
-              </folding>
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,6 +95,8 @@
         <option value="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep3.py" />
         <option value="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep4.py" />
         <option value="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep5.py" />
+        <option value="$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py" />
+        <option value="$PROJECT_DIR$/BlackHatPython/bhnet.py" />
       </list>
     </option>
   </component>
@@ -136,10 +106,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="x" value="778" />
+    <option name="y" value="57" />
+    <option name="width" value="1076" />
+    <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -166,8 +136,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,6 +191,10 @@
               <option name="myItemId" value="BlackHatPython" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -241,7 +215,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="202" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -260,43 +234,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1138" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
-  <component name="RunManager" selected="Python.mtsleep5">
-    <configuration default="false" name="mtsleep1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="mtsleep2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.bhnet">
     <configuration default="false" name="mtsleep3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,6 +286,42 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep5.py" />
       <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="bhnet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BlackHatPython" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BlackHatPython/bhnet.py" />
+      <option name="PARAMETERS" value="-l -p 8080 -c" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="bhnet (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../BHP-Code/Chapter2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py" />
+      <option name="PARAMETERS" value="-t  192.168.1.103 -p 8086 -l -c" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -545,19 +519,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.mtsleep1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.mtsleep2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mtsleep3" />
-      <item index="3" class="java.lang.String" itemvalue="Python.mtsleep4" />
-      <item index="4" class="java.lang.String" itemvalue="Python.mtsleep5" />
+      <item index="0" class="java.lang.String" itemvalue="Python.mtsleep3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mtsleep4" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mtsleep5" />
+      <item index="3" class="java.lang.String" itemvalue="Python.bhnet" />
+      <item index="4" class="java.lang.String" itemvalue="Python.bhnet (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mtsleep5" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mtsleep4" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mtsleep3" />
-        <item index="3" class="java.lang.String" itemvalue="Python.mtsleep2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.mtsleep1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.bhnet" />
+        <item index="1" class="java.lang.String" itemvalue="Python.bhnet (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mtsleep5" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mtsleep4" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mtsleep3" />
       </list>
     </recent_temporary>
   </component>
@@ -578,14 +552,20 @@
       <option name="project" value="LOCAL" />
       <updated>1459742719680</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="complete samples of thread">
+      <created>1459841703204</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1459841703204</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="778" y="57" width="1076" height="1017" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2097035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36152416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -595,14 +575,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39918533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4040297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -619,7 +599,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished the basic socket example in book" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the basic socket example in book" />
+    <MESSAGE value="complete samples of thread" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete samples of thread" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -642,19 +623,34 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/BlackHatPython/udpClient.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/BlackHatPython/tcpServer.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py</url>
+          <line>192</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/BlackHatPython/tcpServer.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py</url>
+          <line>236</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -664,40 +660,67 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="addr" language="Python" />
-        <watch expression="addr[0]" language="Python" />
-        <watch expression="client" language="Python" />
-        <watch expression="addr" language="Python" />
+        <watch expression="argv" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/tcpClient.py">
+    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/onethr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/udpClient.py">
+    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <caret line="15" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
+          <folding>
+            <element signature="e#23#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/tcpServer.py">
+    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -716,32 +739,6 @@
             <element signature="e#14573#18553#0" expanded="false" />
             <element signature="e#18600#18879#0" expanded="false" />
             <element signature="e#19225#20511#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/tcpClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/udpClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/tcpServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,32 +765,6 @@
             <element signature="e#14573#18553#0" expanded="false" />
             <element signature="e#18600#18879#0" expanded="false" />
             <element signature="e#19225#20511#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/tcpClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/udpClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/tcpServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -845,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-1247972723/_socket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="658" column="8" selection-start-line="658" selection-start-column="8" selection-end-line="658" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 16: Socket Programming/tsTserv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4642857">
@@ -895,44 +859,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/udpClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/tcpClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5430672">
-          <caret line="739" column="21" selection-start-line="739" selection-start-column="21" selection-end-line="739" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlackHatPython/tcpServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydev_monkey.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="520" column="0" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33280253">
+          <caret line="543" column="4" selection-start-line="543" selection-start-column="4" selection-end-line="543" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -947,27 +894,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/onethr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
-          <folding>
-            <element signature="e#23#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.31512606">
           <caret line="15" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
           <folding>
             <element signature="e#23#39#0" expanded="true" />
@@ -975,13 +904,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/onethr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44117647">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/getopt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76890755">
+          <caret line="205" column="61" selection-start-line="205" selection-start-column="61" selection-end-line="205" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#656#1" expanded="false" />
+            <element signature="e#1319#1514#0" expanded="false" />
+            <element signature="e#1386#1466#0" expanded="false" />
+            <element signature="e#1499#1514#0" expanded="false" />
+            <element signature="e#1610#2960#1" expanded="false" />
+            <element signature="e#3497#5000#0" expanded="false" />
+            <element signature="e#3497#4033#1" expanded="false" />
+            <element signature="e#5047#5587#0" expanded="false" />
+            <element signature="e#5671#6442#0" expanded="false" />
+            <element signature="e#6497#6993#0" expanded="false" />
+            <element signature="e#7034#7216#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CorePythonProgramming/Chapter 18: ThreadProgramming/mtsleep4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.071428575">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.71428573">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#23#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-1247972723/_socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33205375">
+          <caret line="586" column="8" selection-start-line="586" selection-start-column="8" selection-end-line="586" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BHP-Code/Chapter2/bhnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4830827">
+          <caret line="766" column="28" selection-start-line="766" selection-start-column="28" selection-end-line="767" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
