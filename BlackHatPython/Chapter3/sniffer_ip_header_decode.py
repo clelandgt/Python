@@ -55,14 +55,15 @@ if os.name == "nt":
     sniffer.ioctl(socket.SIO_RCVALL, socket.SIP_RCALL_ON)
 
 try:
-    # Read data package
-    raw_buffer = sniffer.recvfrom(BUFSIZE)[0]
+    while True:
+        # Read data package
+        raw_buffer = sniffer.recvfrom(BUFSIZE)[0]
 
-    # 20 data before parsing
-    ip_header = IP(raw_buffer[0:20])
+        # 20 data before parsing
+        ip_header = IP(raw_buffer[0:20])
 
-     # Output protocol and ip addresses
-    print "Protocol: %s %s -> %s" % (ip_header.protocol, ip_header.src_address, ip_header.dst_address)
+         # Output protocol and ip addresses
+        print "Protocol: %s %s -> %s" % (ip_header.protocol, ip_header.src_address, ip_header.dst_address)
 
 # Handle CTRL-C
 except KeyboardInterrupt:
