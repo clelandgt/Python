@@ -110,15 +110,65 @@ class Routes:
             while current_station:
                 if current_station.destination == town_end:
                     routes += 1
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
                 elif not current_station.destination.visited:
                     routes += self.trips_count_within_stations_count(current_station.destination,
                                                                     town_end, stations_counter, stations_max)
                     stations_counter -= 1
 
+<<<<<<< HEAD
                 current_station = current_station.next_station
 
         else:
             return NO_ROUTEfd
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                current_station = current_station.next_station
+
+        else:
+            return NO_ROUTE
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
 
         town_start.visited = False
         return routes

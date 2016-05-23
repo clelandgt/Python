@@ -41,15 +41,27 @@
       <file leaf-file-name="routes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/routes.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.2838428">
               <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+=======
+            <state vertical-scroll-proportion="0.8427877">
+              <caret line="227" column="78" selection-start-line="227" selection-start-column="78" selection-end-line="227" selection-end-column="78" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
               <folding>
                 <element signature="e#25#53#0" expanded="true" />
                 <element signature="e#290#1652#0" expanded="false" />
                 <element signature="e#1806#2072#0" expanded="false" />
                 <element signature="e#2149#2789#0" expanded="false" />
+<<<<<<< HEAD
                 <element signature="e#4173#5218#0" expanded="false" />
                 <element signature="e#5371#6414#0" expanded="false" />
+=======
+                <element signature="e#2956#4036#0" expanded="false" />
+                <element signature="e#4211#5256#0" expanded="false" />
+                <element signature="e#5409#6452#0" expanded="false" />
+                <element signature="e#6588#7505#0" expanded="false" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
               </folding>
             </state>
           </provider>
@@ -132,8 +144,13 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
+<<<<<<< HEAD
     <option name="width" value="2239" />
     <option name="height" value="1272" />
+=======
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -213,7 +230,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../trains" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
     <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -460,6 +481,12 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+<<<<<<< HEAD
+=======
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="21dced36-87dd-47b0-8c9a-efff256371c2" name="Default" comment="" />
@@ -470,10 +497,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="65" y="24" width="2239" height="1272" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09074327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1123506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -493,6 +527,17 @@
       <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3274244" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -527,14 +572,84 @@
     <entry file="file://$PROJECT_DIR$/lib/routes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="203" column="50" selection-start-line="203" selection-start-column="50" selection-end-line="203" selection-end-column="50" />
+=======
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#25#53#0" expanded="true" />
             <element signature="e#290#1652#0" expanded="false" />
             <element signature="e#1806#2072#0" expanded="false" />
             <element signature="e#2149#2789#0" expanded="false" />
+            <element signature="e#2956#4036#0" expanded="false" />
+            <element signature="e#4211#5256#0" expanded="false" />
+            <element signature="e#5409#6452#0" expanded="false" />
+            <element signature="e#6588#7505#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/town.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/stations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding>
+            <element signature="e#2559#2588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
+          <folding>
+            <element signature="e#25#53#0" expanded="true" />
+            <element signature="e#290#1652#0" expanded="false" />
+            <element signature="e#1806#2072#0" expanded="false" />
+            <element signature="e#2149#2789#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#4173#5218#0" expanded="false" />
             <element signature="e#5371#6414#0" expanded="false" />
+=======
+            <element signature="e#2956#4036#0" expanded="false" />
+            <element signature="e#4211#5256#0" expanded="false" />
+            <element signature="e#5409#6452#0" expanded="false" />
+            <element signature="e#6588#7505#0" expanded="false" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
           </folding>
         </state>
       </provider>
@@ -590,8 +705,15 @@
             <element signature="e#290#1652#0" expanded="false" />
             <element signature="e#1806#2072#0" expanded="false" />
             <element signature="e#2149#2789#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#4173#5218#0" expanded="false" />
             <element signature="e#5371#6414#0" expanded="false" />
+=======
+            <element signature="e#2956#4036#0" expanded="false" />
+            <element signature="e#4211#5256#0" expanded="false" />
+            <element signature="e#5409#6452#0" expanded="false" />
+            <element signature="e#6588#7505#0" expanded="false" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
           </folding>
         </state>
       </provider>
@@ -647,8 +769,15 @@
             <element signature="e#290#1652#0" expanded="false" />
             <element signature="e#1806#2072#0" expanded="false" />
             <element signature="e#2149#2789#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#4173#5218#0" expanded="false" />
             <element signature="e#5371#6414#0" expanded="false" />
+=======
+            <element signature="e#2956#4036#0" expanded="false" />
+            <element signature="e#4211#5256#0" expanded="false" />
+            <element signature="e#5409#6452#0" expanded="false" />
+            <element signature="e#6588#7505#0" expanded="false" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
           </folding>
         </state>
       </provider>
@@ -697,15 +826,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/routes.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.2838428">
           <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+=======
+        <state vertical-scroll-proportion="0.8427877">
+          <caret line="227" column="78" selection-start-line="227" selection-start-column="78" selection-end-line="227" selection-end-column="78" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
           <folding>
             <element signature="e#25#53#0" expanded="true" />
             <element signature="e#290#1652#0" expanded="false" />
             <element signature="e#1806#2072#0" expanded="false" />
             <element signature="e#2149#2789#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#4173#5218#0" expanded="false" />
             <element signature="e#5371#6414#0" expanded="false" />
+=======
+            <element signature="e#2956#4036#0" expanded="false" />
+            <element signature="e#4211#5256#0" expanded="false" />
+            <element signature="e#5409#6452#0" expanded="false" />
+            <element signature="e#6588#7505#0" expanded="false" />
+>>>>>>> 04c30f9250f8a13962fa4bec5a9927b4fbd842a7
           </folding>
         </state>
       </provider>
