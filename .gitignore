@@ -1,0 +1,5 @@
+# Ignoring pycharm Tool cache files
+*.idea
+
+# Ignoring python cache file
+*pyc
