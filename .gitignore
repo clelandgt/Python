@@ -3,3 +3,6 @@
 
 # Ignoring python cache file
 *pyc
+
+# Ignoring sqlite
+*db.sqlite3
