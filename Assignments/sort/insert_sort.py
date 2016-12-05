@@ -5,7 +5,7 @@ def insert_sort(l):
     for i in range(1, len(l)):
         curr = l[i]
         j = i - 1
-        while j >=0 and l[j] > curr:
+        while j >= 0 and l[j] > curr:
             l[j + 1] = l[j]
             j -= 1
         l[j + 1] = curr
