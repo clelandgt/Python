@@ -47,6 +47,7 @@ def store_in_hbase(conn, csv_reader):
 		error_list.append(str(e))
 	finally:
 		print 'insert {} rows'.format(count)
+		batch.send()
 
 	for index, error in enumerate(error_list):
 		print 'Exception {0}: {1}'.format(index+1, error)
