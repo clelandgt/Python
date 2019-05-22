@@ -6,7 +6,7 @@ def quick_sort(lists, left, right):
 	# 快速排序
 	if left >= right:
 		return lists
-	keys = lists[left]
+	key = lists[left]
 	low = left
 	high = right
 	while left < right:
@@ -21,9 +21,10 @@ def quick_sort(lists, left, right):
 	quick_sort(lists, left+1, high)
 	return lists
 
+
 if __name__ == '__main__':
 	l = [2, 1, 10, 3, 8, 9]
 	print l
 	print 'after sort \n'
-	quick_sort(l, 0, len(l))
+	quick_sort(l, 0, len(l)-1)
 	print l
