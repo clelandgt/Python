@@ -57,10 +57,11 @@ critics = {
 
 
 def sim_distance(prefs, person1, person2):
+	"""欧几里得距离评价"""
 	si = {}
 	for item in prefs[person1]:
 		if item in prefs[person2]:
-			si[item]=1
+			si[item] = 1
 
 	if len(si) == 0:
 		return 0
@@ -68,9 +69,45 @@ def sim_distance(prefs, person1, person2):
 	return 1 / (1+sum([pow(prefs[person1][item]-prefs[person2][item], 2) for item in prefs[person1] if item in prefs[person2]]))
 
 
-def main():
+def sim_pearson(prefs, person1, person2):
+	"""皮尔逊相关度评价"""
+	si = []
+	for item in prefs[person1]:
+		if item in prefs[person2]:
+			si.append(item)
 
+	n = len(si)
+	if n == 0:
+		return 1
+
+	# 所有偏好求和
+	sum1 = sum([prefs[person1][item] for item in si])
+	sum2 = sum([prefs[person2][item] for item in si])
+
+	# 求平方和
+	sum1Sq = sum([pow(prefs[person1][item], 2) for item in si])
+	sum2Sq = sum([pow(prefs[person1][item], 2) for item in si])
+
+	# 求乘积之和
+	pSum = sum([prefs[person1][item] * prefs[person2][item] for item in si])
+
+	# 计算皮尔逊评价值
+	num = pSum - (sum1*sum2/n)
+	den = sqrt((sum1Sq-pow(sum1, 2)/n) * ((sum2Sq-pow(sum2, 2)/n)))
+	if den == 0:
+		return 0
+	else:
+		return num / den
+
+
+def main():
 	keys = critics.keys()
+	print 'sim_distance'
+	for person1 in keys:
+		for person2 in keys:
+			print 'person1={0} person2={1}  score={2}'.format(person1, person2, sim_distance(critics, person1, person2))
+
+	print 'sim_pearson'
 	for person1 in keys:
 		for person2 in keys:
 			print 'person1={0} person2={1}  score={2}'.format(person1, person2, sim_distance(critics, person1, person2))
