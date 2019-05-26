@@ -86,31 +86,33 @@ def sim_pearson(prefs, person1, person2):
 
 	# 求平方和
 	sum1Sq = sum([pow(prefs[person1][item], 2) for item in si])
-	sum2Sq = sum([pow(prefs[person1][item], 2) for item in si])
+	sum2Sq = sum([pow(prefs[person2][item], 2) for item in si])
 
 	# 求乘积之和
 	pSum = sum([prefs[person1][item] * prefs[person2][item] for item in si])
 
 	# 计算皮尔逊评价值
 	num = pSum - (sum1*sum2/n)
-	den = sqrt((sum1Sq-pow(sum1, 2)/n) * ((sum2Sq-pow(sum2, 2)/n)))
+	den = sqrt((sum1Sq-pow(sum1, 2)/n) * (sum2Sq-pow(sum2, 2)/n))
 	if den == 0:
 		return 0
 	else:
 		return num / den
 
 
-def main():
-	keys = critics.keys()
-	print 'sim_distance'
-	for person1 in keys:
-		for person2 in keys:
-			print 'person1={0} person2={1}  score={2}'.format(person1, person2, sim_distance(critics, person1, person2))
+def topMatches(prefs, person, n=5, similarity=sim_pearson):
+	score = [(similarity(prefs, person, other), other) for other in prefs.keys() if person != other]
+	score.sort()
+	score.reverse()
+	return score[0: n]
 
-	print 'sim_pearson'
-	for person1 in keys:
-		for person2 in keys:
-			print 'person1={0} person2={1}  score={2}'.format(person1, person2, sim_distance(critics, person1, person2))
+
+def main():
+	print "****** sim_pearon arithmetic ******"
+	print topMatches(critics, 'Toby', 5, similarity=sim_pearson)
+
+	print "****** sim_distance arithmetic ******"
+	print topMatches(critics, 'Toby', 5, similarity=sim_distance)
 
 
 if __name__ == '__main__':
