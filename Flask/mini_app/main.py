@@ -3,6 +3,7 @@
 # @Author: clelandgt@163.com
 # @Date  : 2020-06-01
 # @Desc  : A Minimal Application: https://flask.palletsprojects.com/en/1.1.x/quickstart/#sessions
+#  运行：export FLASK_APP=main.py   python -m flask run
 
 from flask import Flask
 app = Flask(__name__)
