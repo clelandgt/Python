@@ -1,0 +1,64 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Block Title{%endblock %}
+
+{% block head %}
+<head>
+    <title>Flask Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href='../static/css/orbitron.css' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> -->
+</head>
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="box">
+        <div class="screen">
+            <div class="main-screen" id="output">0</div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="buttons">
+                <button class="btn-clear btn btn-warning" id="clearButton">AC</button>
+                <button class="btn btn-warning" id="deleteButton">CE</button>
+                <button class="btn-operate btn btn-info" value="/">/</button>
+                <button class="btn-operate btn btn-info" value="*">x</button>
+            </div>
+
+            <div class="buttons">
+                <button class="nums btn btn-info" value="7">7</button>
+                <button class="nums btn btn-info" value="8">8</button>
+                <button class="nums btn btn-info" value="9">9</button>
+                <button class="btn-operate btn btn-info" value="-">-</button>
+            </div>
+
+            <div class="buttons">
+                <button class="nums btn btn-info" value="4">4</button>
+                <button class="nums btn btn-info" value="5">5</button>
+                <button class="nums btn btn-info" value="6">6</button>
+                <button class="btn-operate btn btn-info" value="+">+</button>
+            </div>
+
+            <div class="buttons">
+                <button class="nums btn btn-info" value="1">1</button>
+                <button class="nums btn btn-info" value="2">2</button>
+                <button class="nums btn btn-info" value="3">3</button>
+                <button class="btn-equal btn btn-info" id="resultButton">=</button>
+            </div>
+
+            <div class="buttons">
+                <button class="nums btn-zero btn btn-info" value="0">0</button>
+                <button class="nums btn btn-info" value=".">.</button>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</body>
+{% endblock %}
