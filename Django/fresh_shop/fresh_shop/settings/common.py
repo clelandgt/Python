@@ -25,7 +25,7 @@ SECRET_KEY = 'a*xtccm3a*_#y)54=#ml!4zv@@v!#=4ronr7pfnps*4-yeh0sd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # 自定义模块
+    #'user',
 ]
 
 MIDDLEWARE = [
@@ -103,9 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -118,3 +121,67 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+
+# 日志
+# LOGGING = {
+#     "version": 1,
+#     "disable_existing_loggers": False,
+#     "formatters": {
+#         "debug": {
+#             "format": "%(levelname)s - %(asctime)s - %(module)s - %(funcName)s - %(lineno)d - %(message)s"
+#         },
+#         "basic": {
+#             "format": "%(levelname)s - %(asctime)s - %(message)s"
+#         }
+#     },
+#
+#     "handlers": {
+#         "console": {
+#             "class": "logging.StreamHandler",
+#             "level": "DEBUG",
+#             "formatter": "debug",
+#             "stream": "ext://sys.stdout"
+#         },
+#
+#         "info_file_handler": {
+#             "class": "logging.handlers.RotatingFileHandler",
+#             "level": "INFO",
+#             "formatter": "basic",
+#             "filename": os.path.join(BASE_DIR, "logs/info.log"),
+#             "encoding": "utf8"
+#         },
+#
+#         "warn_file_handler": {
+#             "class": "logging.handlers.RotatingFileHandler",
+#             "level": "WARNING",
+#             "formatter": "debug",
+#             "filename": os.path.join(BASE_DIR, "logs/warn.log"),
+#             "encoding": "utf8"
+#         },
+#
+#         "error_file_handler": {
+#             "class": "logging.handlers.RotatingFileHandler",
+#             "level": "ERROR",
+#             "formatter": "debug",
+#             "filename": os.path.join(BASE_DIR, "logs/error.log"),
+#             "encoding": "utf8"
+#         }
+#     },
+#
+#     "loggers": {
+#         "my_module": {
+#             "level": "ERROR",
+#             "handlers": ["console"],
+#             "propagate": "no"
+#         }
+#     },
+#
+#     "root": {
+#         "level": "INFO",
+#         "handlers": ["console", "info_file_handler", "warn_file_handler", "error_file_handler"]
+#     }
+# }
