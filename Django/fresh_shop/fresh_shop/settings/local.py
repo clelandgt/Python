@@ -11,7 +11,7 @@ PYTHON_INTERPRETER = '/Users/cleland/.pyenv/versions/3.7.1/envs/base/bin/python'
 
 
 # 数据库
-META_STORE_DB = 'huifenqi_datareport'
+META_STORE_DB = 'fresh_shop'
 META_STORE_HOST = 'localhost'
 META_STORE_PORT = 3306
 META_STORE_USER = 'root'
@@ -32,3 +32,5 @@ DATABASES = {
         'PORT': META_STORE_PORT
     }
 }
+
+# 账号 cleland  密码: Cleland123!
