@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from apps import user
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('user/', user.urls) # 用户模块
 ]
