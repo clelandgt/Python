@@ -1,7 +1,9 @@
 import re
+import time
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.core.paginator import Paginator
+from django.core.mail import send_mail
 from django.urls import reverse
 from django.views.generic import View
 from django_redis import get_redis_connection
@@ -111,13 +113,22 @@ class RegisterView(View):
         # 激活链接中需要包含用户的身份信息, 并且要把身份信息进行加密
 
         # 加密用户的身份信息，生成激活token
-        # serializer = Serializer(settings.SECRET_KEY, 3600)
-        # info = {'confirm':user.id}
-        # token = serializer.dumps(info) # bytes
-        # token = token.decode()
-        #
-        # # 发邮件
+        # TODO: 使用Celery
+        serializer = Serializer(settings.SECRET_KEY, 3600)
+        info = {'confirm':user.id}
+        token = serializer.dumps(info) # bytes
+        token = token.decode()
+
+        # 发邮件
         # send_register_active_email.delay(email, username, token)
+        subject = '天天生鲜欢迎信息'
+        message = ''
+        sender = settings.EMAIL_FROM
+        receiver = [email]
+        html_message = f'<h1>{username}, 欢迎您成为天天生鲜注册会员</h1>请点击下面链接激活您的账户<br/><a href="http://127.0.0.1:8000/user/active/{token}">http://127.0.0.1:8000/user/active/{token}</a>'
+
+        send_mail(subject, message, sender, receiver, html_message=html_message)
+        time.sleep(2)
 
         # 返回应答, 跳转到首页
         return redirect(reverse('goods:index'))
