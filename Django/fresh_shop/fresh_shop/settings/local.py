@@ -21,6 +21,7 @@ META_STORE_PASSWORD = 'ganZHEyu'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 import pymysql
+pymysql.version_info=(1,3,13,"final",0)
 pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
