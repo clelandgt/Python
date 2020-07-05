@@ -20,7 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path(r'admin/', admin.site.urls),
     path(r'user/', include(('apps.user.urls', 'user'), namespace='user')),  # 用户模块
-    path(r'cart', include(('apps.cart.urls', 'cart'), namespace='cart')),  # 购物车模块
-    path(r'order', include(('apps.order.urls', 'order'), namespace='order')),  # 订单模块
+    path(r'cart/', include(('apps.cart.urls', 'cart'), namespace='cart')),  # 购物车模块
+    path(r'order/', include(('apps.order.urls', 'order'), namespace='order')),  # 订单模块
     path(r'', include(('apps.goods.urls', 'goods'), namespace='goods')),  # 商品模块
 ]
