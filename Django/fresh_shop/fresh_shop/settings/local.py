@@ -33,8 +33,40 @@ DATABASES = {
         'PORT': META_STORE_PORT
     }
 }
-
 # 账号 cleland  密码: Cleland123!
+
+# # Django的缓存配置
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379/1",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'redis_cache.RedisCache',
+        'LOCATION': [
+            '127.0.0.1:6379',
+        ],
+        'OPTIONS': {
+            'DB': 2,
+            #'PASSWORD': 'yadayada',
+            'PARSER_CLASS': 'redis.connection.HiredisParser',
+            'CONNECTION_POOL_CLASS': 'redis.BlockingConnectionPool',
+            'CONNECTION_POOL_CLASS_KWARGS': {
+                'max_connections': 50,
+                'timeout': 20,
+            },
+            'MAX_CONNECTIONS': 1000,
+            'PICKLE_VERSION': -1,
+        },
+    },
+}
 
 # email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
