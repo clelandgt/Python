@@ -5,9 +5,9 @@
 # @Desc  :
 
 from django.urls import path
-# from apps.order.views import CardInfoView, CartAddView, CartUpdateView, CartDeleteView
+from apps.order.views import OrderPlaceView
 #
-# urlpatterns = [
-#     path(r'place', OrderPlaceView.as_view(), name='place'),  # 提交订单页面显示
-#
-# ]
+urlpatterns = [
+    path('place', OrderPlaceView.as_view(), name='place'),  # 提交订单页面显示
+
+]
