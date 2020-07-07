@@ -4,9 +4,10 @@
 # @Date  : 2020-07-05
 # @Desc  :
 
-from django.urls import path, include
-
-
-urlpatterns = [
-
-]
+from django.urls import path
+# from apps.order.views import CardInfoView, CartAddView, CartUpdateView, CartDeleteView
+#
+# urlpatterns = [
+#     path(r'place', OrderPlaceView.as_view(), name='place'),  # 提交订单页面显示
+#
+# ]
