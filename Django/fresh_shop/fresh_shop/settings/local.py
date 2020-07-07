@@ -49,24 +49,20 @@ DATABASES = {
 
 CACHES = {
     'default': {
-        'BACKEND': 'redis_cache.RedisCache',
+        'BACKEND': 'django_redis.cache.RedisCache',
         'LOCATION': [
-            '127.0.0.1:6379',
+            'redis://127.0.0.1:6379/2',
         ],
         'OPTIONS': {
-            'DB': 2,
-            #'PASSWORD': 'yadayada',
-            'PARSER_CLASS': 'redis.connection.HiredisParser',
-            'CONNECTION_POOL_CLASS': 'redis.BlockingConnectionPool',
-            'CONNECTION_POOL_CLASS_KWARGS': {
-                'max_connections': 50,
-                'timeout': 20,
-            },
-            'MAX_CONNECTIONS': 1000,
-            'PICKLE_VERSION': -1,
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
         },
     },
 }
+
+# 配置session存储
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
+
 
 # email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
