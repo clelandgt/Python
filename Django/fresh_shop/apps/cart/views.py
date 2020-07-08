@@ -49,7 +49,7 @@ class CartAddView(View):
     """购物车记录添加"""
     def post(self, request):
         user = request.user
-        if not user.is_authenticated():
+        if not user.is_authenticated:
             return JsonResponse({
                 'res': 0,
                 'errmsg': '请登录'
@@ -114,7 +114,7 @@ class CartUpdateView(View):
     def post(self, request):
         '''购物车记录更新'''
         user = request.user
-        if not user.is_authenticated():
+        if not user.is_authenticated:
             # 用户未登录
             return JsonResponse({'res': 0, 'errmsg': '请先登录'})
 
@@ -166,7 +166,7 @@ class CartDeleteView(View):
     """购物车记录删除"""
     def post(self, request):
         user = request.user
-        if not user.is_authenticated():
+        if not user.is_authenticated:
             return JsonResponse({
                 'res': 0,
                 'errmsg': '清先登录'
