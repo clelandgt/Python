@@ -121,61 +121,61 @@ STATICFILES_DIRS = (
 
 
 # 日志
-# LOGGING = {
-#     "version": 1,
-#     "disable_existing_loggers": False,
-#     "formatters": {
-#         "debug": {
-#             "format": "%(levelname)s - %(asctime)s - %(module)s - %(funcName)s - %(lineno)d - %(message)s"
-#         },
-#         "basic": {
-#             "format": "%(levelname)s - %(asctime)s - %(message)s"
-#         }
-#     },
-#
-#     "handlers": {
-#         "console": {
-#             "class": "logging.StreamHandler",
-#             "level": "DEBUG",
-#             "formatter": "debug",
-#             "stream": "ext://sys.stdout"
-#         },
-#
-#         "info_file_handler": {
-#             "class": "logging.handlers.RotatingFileHandler",
-#             "level": "INFO",
-#             "formatter": "basic",
-#             "filename": os.path.join(BASE_DIR, "logs/info.log"),
-#             "encoding": "utf8"
-#         },
-#
-#         "warn_file_handler": {
-#             "class": "logging.handlers.RotatingFileHandler",
-#             "level": "WARNING",
-#             "formatter": "debug",
-#             "filename": os.path.join(BASE_DIR, "logs/warn.log"),
-#             "encoding": "utf8"
-#         },
-#
-#         "error_file_handler": {
-#             "class": "logging.handlers.RotatingFileHandler",
-#             "level": "ERROR",
-#             "formatter": "debug",
-#             "filename": os.path.join(BASE_DIR, "logs/error.log"),
-#             "encoding": "utf8"
-#         }
-#     },
-#
-#     "loggers": {
-#         "my_module": {
-#             "level": "ERROR",
-#             "handlers": ["console"],
-#             "propagate": "no"
-#         }
-#     },
-#
-#     "root": {
-#         "level": "INFO",
-#         "handlers": ["console", "info_file_handler", "warn_file_handler", "error_file_handler"]
-#     }
-# }
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "debug": {
+            "format": "%(levelname)s - %(asctime)s - %(module)s - %(funcName)s - %(lineno)d - %(message)s"
+        },
+        "basic": {
+            "format": "%(levelname)s - %(asctime)s - %(message)s"
+        }
+    },
+
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "debug",
+            "stream": "ext://sys.stdout"
+        },
+
+        "info_file_handler": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "INFO",
+            "formatter": "basic",
+            "filename": os.path.join(BASE_DIR, "logs/info.log"),
+            "encoding": "utf8"
+        },
+
+        "warn_file_handler": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "WARNING",
+            "formatter": "debug",
+            "filename": os.path.join(BASE_DIR, "logs/warn.log"),
+            "encoding": "utf8"
+        },
+
+        "error_file_handler": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "ERROR",
+            "formatter": "debug",
+            "filename": os.path.join(BASE_DIR, "logs/error.log"),
+            "encoding": "utf8"
+        }
+    },
+
+    "loggers": {
+        "my_module": {
+            "level": "ERROR",
+            "handlers": ["console"],
+            "propagate": "no"
+        }
+    },
+
+    "root": {
+        "level": "INFO",
+        "handlers": ["console", "info_file_handler", "warn_file_handler", "error_file_handler"]
+    }
+}
