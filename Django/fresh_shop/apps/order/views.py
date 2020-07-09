@@ -202,7 +202,7 @@ class OrderCommitView(View):
         """订单创建"""
         # 判断用户是否登录
         user = request.user
-        if not user.is_authenticated():
+        if not user.is_authenticated:
             # 用户未登录
             return JsonResponse({'res':0, 'errmsg':'用户未登录'})
 
@@ -333,7 +333,7 @@ class OrderPayView(View):
         '''订单支付'''
         # 用户是否登录
         user = request.user
-        if not user.is_authenticated():
+        if not user.is_authenticated:
             return JsonResponse({'res':0, 'errmsg':'用户未登录'})
 
         # 接收参数

@@ -10,7 +10,7 @@ class AddressManager(models.Manager):
         """获取用户默认收货地址"""
         try:
             address = self.get(user=user, is_default=True)
-        except self.model.DoesNotExsit:
+        except self.model.DoesNotExist:
             address = None
 
         return address
@@ -35,7 +35,7 @@ class Address(BaseModel):
     is_default = models.BooleanField(default=False, verbose_name='是否默认')
 
     # 自定义一个模型管理器对象
-    object = AddressManager()
+    objects = AddressManager()
 
     class Meta:
         db_table = 'df_address'
