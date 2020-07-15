@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @File  : observer_model_2.py
+# @File  : observer_model_02.py
 # @Author: clelandgt@163.com
 # @Date  : 2020-07-11
 # @Desc  :
