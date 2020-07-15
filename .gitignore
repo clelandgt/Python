@@ -10,3 +10,7 @@
 *.DS_Store
 *.ipynb_checkpoints
 *.python-version
+
+
+# log
+*.log
