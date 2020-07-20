@@ -5,7 +5,6 @@
 # @Desc  :
 
 
-
 class State:
     """状态"""
     def __init__(self, name):
@@ -62,7 +61,7 @@ class Water:
         self.__temperature = temperature
         if self.__temperature <= 0:
             self.change_state(SolidState('固态'))
-        elif  self.__temperature <= 100:
+        elif self.__temperature <= 100:
             self.change_state(LiquidState('液态'))
         else:
             self.change_state(GaseousState('气态'))

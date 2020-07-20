@@ -8,42 +8,78 @@
 class Context:
     """状态模式的上下文环境类"""
     def __init__(self):
-        pass
+        self.__states = []
+        self.__cur_state = None
+        self.__state_info = 0
 
     def add_state(self, state):
-        pass
+        if state not in self.__states:
+            self.__states.append(state)
 
     def change_state(self, state):
-        pass
+        if state is None:
+            return False
+        if self.__cur_state is None:
+            print('初始化为: ', state.get_state_name())
+        else:
+            print('由', self.__cur_state.get_state_name(), '变为', state.get_state_name())
+        self.__cur_state = state
+        self.add_state(state)
+        return True
 
     def get_state(self):
-        pass
+        return self.__cur_state
 
     def _set_state_info(self, state_info):
-        pass
+        self.__state_info = state_info
+        for state in self.__states:
+            if state.is_match(state_info):
+                self.change_state(state)
 
-    def get_state_info(self):
-        pass
+    def _get_state_info(self):
+        return self.__state_info
 
 
 class State:
     """状态基类"""
     def __init__(self, name):
-        pass
+        self.__name = name
 
     def get_state_name(self):
-        pass
+        return self.__name
 
     def is_match(self, state_info):
         """状态信息stateinfo是否在当前状态范围内"""
-        pass
+        return False
 
     def behavior(self, context):
         pass
 
 
-class Water:
-    pass
+class Water(Context):
+    def __init__(self):
+        super().__init__()
+        self.add_state(SolidState('固态'))
+        self.add_state(LiquidState('液态'))
+        self.add_state(GaseousState('气态'))
+        self.set_temperature(25)
+
+    def get_temperature(self):
+        return self._get_state_info()
+
+    def set_temperature(self, temperature):
+        self._set_state_info(temperature)
+
+    def add_temperature(self, steps):
+        self._set_state_info(self.get_temperature() + steps)
+
+    def sub_temperature(self, steps):
+        self._set_state_info(self.get_temperature() - steps)
+
+    def behavior(self):
+        state = self.get_state()
+        if isinstance(state, State):
+            state.behavior(self)
 
 
 # 单例装饰器
@@ -108,7 +144,7 @@ class GaseousState(State):
 
 
 def main():
-    water = Water(LiquidState('液态'))
+    water = Water()
     water.behavior()
     water.set_temperature(-4)
     water.behavior()
