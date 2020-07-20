@@ -5,12 +5,6 @@
 # @Desc  :
 
 
-class Water:
-    """水"""
-
-    def __init__(self):
-        pass
-
 
 class State:
     """状态"""
@@ -54,9 +48,56 @@ class GaseousState(State):
               "摄氏度，飞向天空是我毕生的梦想，在这你将看不到我的存在，我将达到无我的境界....")
 
 
+class Water:
+    """水"""
+
+    def __init__(self, state):
+        self.__state = state
+        self.__temperature = 25
+
+    def get_temperature(self):
+        return self.__temperature
+
+    def set_temperature(self, temperature):
+        self.__temperature = temperature
+        if self.__temperature <= 0:
+            self.change_state(SolidState('固态'))
+        elif  self.__temperature <= 100:
+            self.change_state(LiquidState('液态'))
+        else:
+            self.change_state(GaseousState('气态'))
+
+    def set_state(self, state):
+        self.__state = state
+
+    def change_state(self, state):
+        if self.__state is None:
+            print('初始化为: ', state.get_state_name())
+        else:
+            print('由', self.__state.get_state_name(), '变为', state.get_state_name())
+        self.__state = state
+
+    def add_temperature(self, temperature):
+        self.set_temperature(self.get_temperature() + temperature)
+
+    def sub_temperature(self, temperature):
+        self.set_temperature(self.get_temperature() - temperature)
+
+    def behavior(self):
+        self.__state.behavior(self)
+
 
 def main():
-    pass
+    water = Water(LiquidState('液态'))
+    water.behavior()
+    water.set_temperature(-4)
+    water.behavior()
+    water.add_temperature(10)
+    water.behavior()
+    water.sub_temperature(50)
+    water.behavior()
+    water.add_temperature(200)
+    water.behavior()
 
 
 if __name__ == '__main__':
