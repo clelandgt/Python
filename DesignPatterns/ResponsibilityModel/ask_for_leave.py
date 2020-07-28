@@ -48,7 +48,6 @@ class Responsible:
         pass
 
 
-
 class Person:
     """请求者"""
     def __init__(self, name):
@@ -88,17 +87,38 @@ class Supervisor(Responsible):
 
 class DepermentManager(Responsible):
     """部门总监"""
-    pass
+    def __init__(self, name, title):
+        super().__init__(name, title)
+
+    def handle_request(self, request):
+        if (request.get_dayoff() > 2 and request.get_dayoff() <= 5):
+            print("同意", request.get_name(), "请假，签字人: ", self.get_name(), "(", self.get_title(), ")")
+        next_handle = self.get_next_handler()
+        if(next_handle is not None):
+            next_handle.handle_request(request)
 
 
 class CEO(Responsible):
     """CEO"""
-    pass
+    def __init__(self, name, title):
+        super().__init__(name, title)
+
+    def handle_request(self, request):
+        if (request.get_dayoff() > 5):
+            print("同意", request.get_name(), "请假，签字人: ", self.get_name(), "(", self.get_title(), ")")
+        next_handle = self.get_next_handler()
+        if(next_handle is not None):
+            next_handle.handle_request(request)
 
 
 class Administrator(Responsible):
     """行政人员"""
-    pass
+    def __init__(self, name, title):
+        super().__init__(name, title)
+
+    def handle_request(self, request):
+        print(request.get_name(), '的请假申请已审核，情况属实！已备案处理。处理人: ', self.get_name())
+        next_handle = self.get_next_handler()
 
 
 def main():
@@ -106,7 +126,21 @@ def main():
     deperment_leader = DepermentManager("Eric", "技术研发中心总监")
     ceo = CEO("Helen", "创新文化公司CEO")
     administrator = Administrator("Nina", "行政中心总监")
+    direct_leader.set_next_handler(deperment_leader)
+    deperment_leader.set_next_handler(ceo)
+    ceo.set_next_handler(administrator)
 
+    sunny = Person('sunny')
+    sunny.set_leader(direct_leader)
+    sunny.send_request(Request(sunny.get_name(), 1, '参加MDCC大会'))
+
+    tony = Person('tony')
+    tony.set_leader(direct_leader)
+    tony.send_request(Request(tony.get_name(), 5, '家里有急事'))
+
+    xiaohua = Person('xiaohua')
+    xiaohua.set_leader(direct_leader)
+    tony.send_request(Request(xiaohua.get_name(), 15, '出国旅游'))
 
 if __name__ == '__main__':
     main()
