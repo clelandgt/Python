@@ -48,6 +48,7 @@ class Responsible:
         pass
 
 
+
 class Person:
     """请求者"""
     def __init__(self, name):
@@ -67,12 +68,22 @@ class Person:
         return self.__leader
 
     def send_request(self, request):
-        pass
+        print(self.__name, '申请请假', request.get_dayoff(), "天。请假事由", request.get_reason())
+        if (self.__leader is not None):
+            self.__leader.handle_request(request)
 
 
 class Supervisor(Responsible):
     """主管"""
-    pass
+    def __init__(self, name, title):
+        super().__init__(name, title)
+
+    def handle_request(self, request):
+        if (request.get_dayoff() <= 2):
+            print("同意", request.get_name(), "请假，签字人: ", self.get_name(), "(", self.get_title(), ")")
+        next_handle = self.get_next_handler()
+        if(next_handle is not None):
+            next_handle.handle_request(request)
 
 
 class DepermentManager(Responsible):
@@ -91,7 +102,10 @@ class Administrator(Responsible):
 
 
 def main():
-    pass
+    direct_leader = Supervisor("Eren", "客户端研发经理")
+    deperment_leader = DepermentManager("Eric", "技术研发中心总监")
+    ceo = CEO("Helen", "创新文化公司CEO")
+    administrator = Administrator("Nina", "行政中心总监")
 
 
 if __name__ == '__main__':
