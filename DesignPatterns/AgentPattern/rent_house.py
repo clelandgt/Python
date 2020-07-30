@@ -6,6 +6,7 @@
 
 
 class HouseInfo:
+    """房源信息"""
     def __init__(self, area, price, has_window, bathroom, kitchen, address, owner):
         self.__area = area
         self.__price = price
@@ -33,7 +34,24 @@ class HouseInfo:
 
 
 class HosingAgent:
-    pass
+    """房屋中介"""
+    def __init__(self, name):
+        self.__name = name
+        self.__house_info = []
+
+    def get_name(self):
+        return self.__name
+
+    def add_house_info(self, house):
+        self.__house_info.append(house)
+
+    def remove_house_info(self, house):
+        for item in self.__house_info:
+            if item == house:
+                self.__house_info.remove(item)
+
+
+
 
 
 class HouseOwner:
