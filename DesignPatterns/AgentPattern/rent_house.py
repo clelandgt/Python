@@ -50,12 +50,35 @@ class HosingAgent:
             if item == house:
                 self.__house_info.remove(item)
 
+    def get_search_condition(self, description):
+        pass
 
+    def get_match_infos(self, search_condition):
+        pass
 
+    def sign_contract(self, house_info, time):
+        pass
+
+    def sign_contracts(self, time):
+        pass
 
 
 class HouseOwner:
-    pass
+    """房东"""
+    def __init__(self, name, address):
+        self.__name = name
+        self.__address = address
+        self.__house_info = None
+
+    def get_name(self):
+        return self.__name
+
+    def get_address(self):
+        return self.__address
+
+    def set_house_info(self, area, price, has_window, bathroom, kitchen):
+        def __init__(self, area, price, has_window, bathroom, kitchen, address, owner):
+        self.__house_info = HouseInfo(area, has_window, bathroom, kitchen)
 
 
 class Custom:
