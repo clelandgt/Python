@@ -20,7 +20,7 @@ class ReceiveParcel:
 class RealReceive(ReceiveParcel):
     """主题"""
     def __init__(self, name, phone_num):
-        self.__name = name
+        super().__init__(name)
         self.__phone_num = phone_num
 
     def get_phone_num(self):
@@ -31,14 +31,29 @@ class RealReceive(ReceiveParcel):
         print('接收到一个包裹，包裹内容: ' + parcel_content)
 
 
-class ProxyReceive(RealReceive):
+class ProxyReceive(ReceiveParcel):
     """代理主题"""
-    pass
+    def __init__(self, name, receiver):
+        super().__init__(name)
+        self.__receiver = receiver
 
+    def receive(self, parcel_content):
+        self.pre_receive()
+        if(self.__receiver is not None):
+            self.__receiver.receive(parcel_content)
+        self.after_receive()
+
+    def pre_receive(self):
+        print('我是' + self.__receiver.get_name() + '的朋友，我来帮他代收快递!')
+
+    def after_receive(self):
+        print('代收人: ' + self.get_name())
 
 
 def main():
-    pass
+    tony = RealReceive('Tony', '18512345678')
+    tom = ProxyReceive('Tom', tony)
+    tom.receive('雨伞')
 
 
 if __name__ == '__main__':
