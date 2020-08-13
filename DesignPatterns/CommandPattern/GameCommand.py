@@ -131,7 +131,40 @@ class GameInvoker:
 
 
 def main():
-    pass
+    role = GameRole()
+    invoker = GameInvoker()
+    while True:
+        strCmd = input('请输入命令')
+        strCmd = strCmd.upper()
+        if strCmd == 'L':
+            invoker.set_command(Left(role)).action()
+        elif strCmd == 'R':
+            invoker.set_command(Right(role)).action()
+        elif strCmd == 'U':
+            invoker.set_command(Up(role)).action()
+        elif strCmd == 'D':
+            invoker.set_command(Down(role)).action()
+        elif strCmd == 'J':
+            invoker.set_command(Jump(role)).action()
+        elif strCmd == 'S':
+            invoker.set_command(Squat(role)).action()
+        elif strCmd == 'A':
+            invoker.set_command(Attack(role)).action()
+        elif strCmd == 'JP':
+            mac = MacroCommand(role)
+            mac.add_command(Jump)
+            mac.add_command(Squat)
+            invoker.set_command(mac).action()
+        elif strCmd == 'JA':
+            mac = MacroCommand()
+            mac.add_command(Jump)
+            mac.add_command(Squat)
+            mac.add_command(Attack)
+            invoker.set_command(mac).action()
+        elif strCmd == 'Q':
+            exit()
+        else:
+            print('错误输入')
 
 
 if __name__ == '__main__':
