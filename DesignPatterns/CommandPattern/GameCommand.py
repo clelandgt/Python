@@ -36,16 +36,16 @@ class GameRole:
         print('攻击')
 
     def show_position(self):
-        print('x: ' + self.__x + ', y: ' + self.__y + ', z:' + self.__z)
+        print('x: ' + str(self.__x) + ', y: ' + str(self.__y) + ', z:' + str(self.__z))
 
 
 class GameCommand(metaclass=ABCMeta):
     """游戏角色的命令类"""
     def __init__(self, role):
-        self.__role = role
+        self._role = role
 
     def set_role(self, role):
-        self.__role = role
+        self._role = role
 
     @abstractmethod
     def execute(self):
@@ -55,66 +55,66 @@ class GameCommand(metaclass=ABCMeta):
 class Left(GameCommand):
     """左移命令"""
     def execute(self):
-        self.__role.left_move()
-        self.__role.show_position()
+        self._role.left_move()
+        self._role.show_position()
 
 
 class Right(GameCommand):
     """右移命令"""
     def execute(self):
-        self.__role.right_move()
-        self.__role.show_position()
+        self._role.right_move()
+        self._role.show_position()
 
 
 class Up(GameCommand):
     """上移命令"""
     def execute(self):
-        self.__role.up_move()
-        self.__role.show_position()
+        self._role.up_move()
+        self._role.show_position()
 
 
 class Down(GameCommand):
     """下移命令"""
     def execute(self):
-        self.__role.down_move()
-        self.__role.show_position()
+        self._role.down_move()
+        self._role.show_position()
 
 
 class Jump(GameCommand):
     """上跳命令"""
     def execute(self):
-        self.__role.jump_move()
-        self.__role.show_position()
+        self._role.jump_move()
+        self._role.show_position()
 
 
 class Squat(GameCommand):
     """下蹲命令"""
     def execute(self):
-        self.__role.squat_move()
-        self.__role.show_position()
+        self._role.squat_move()
+        self._role.show_position()
 
 
 class Attack(GameCommand):
     """攻击命令"""
     def execute(self):
-        self.__role.attack()
-        self.__role.show_position()
+        self._role.attack()
+        self._role.show_position()
 
 
 class MacroCommand(GameCommand):
     def __init__(self, role=None):
         super().__init__(role)
-        self.commands = []
+        self.__commands = []
 
-    def add_command(self,command):
-        self.commands.append(command)
+    def add_command(self, command):
+        self.__commands.append(command)
 
     def remove_command(self, command):
-        self.commands.remove(command)
+        self.__commands.remove(command)
 
     def execute(self):
-        for command in self.commands:
-            command.excute()
+        for command in self.__commands:
+            command.execute()
 
 
 class GameInvoker:
@@ -127,14 +127,14 @@ class GameInvoker:
 
     def action(self):
         if self.__command is not None:
-            self.__command.action()
+            self.__command.execute()
 
 
 def main():
     role = GameRole()
     invoker = GameInvoker()
     while True:
-        strCmd = input('请输入命令')
+        strCmd = input('请输入命令: \n')
         strCmd = strCmd.upper()
         if strCmd == 'L':
             invoker.set_command(Left(role)).action()
@@ -151,16 +151,16 @@ def main():
         elif strCmd == 'A':
             invoker.set_command(Attack(role)).action()
         elif strCmd == 'JP':
-            mac = MacroCommand(role)
-            mac.add_command(Jump)
-            mac.add_command(Squat)
-            invoker.set_command(mac).action()
+            cmd = MacroCommand(role)
+            cmd.add_command(Jump(role))
+            cmd.add_command(Squat(role))
+            invoker.set_command(cmd).action()
         elif strCmd == 'JA':
-            mac = MacroCommand()
-            mac.add_command(Jump)
-            mac.add_command(Squat)
-            mac.add_command(Attack)
-            invoker.set_command(mac).action()
+            cmd = MacroCommand(role)
+            cmd.add_command(Jump(role))
+            cmd.add_command(Squat(role))
+            cmd.add_command(Attack(role))
+            invoker.set_command(cmd).action()
         elif strCmd == 'Q':
             exit()
         else:
