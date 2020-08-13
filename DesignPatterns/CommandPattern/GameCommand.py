@@ -52,6 +52,84 @@ class GameCommand(metaclass=ABCMeta):
         pass
 
 
+class Left(GameCommand):
+    """左移命令"""
+    def execute(self):
+        self.__role.left_move()
+        self.__role.show_position()
+
+
+class Right(GameCommand):
+    """右移命令"""
+    def execute(self):
+        self.__role.right_move()
+        self.__role.show_position()
+
+
+class Up(GameCommand):
+    """上移命令"""
+    def execute(self):
+        self.__role.up_move()
+        self.__role.show_position()
+
+
+class Down(GameCommand):
+    """下移命令"""
+    def execute(self):
+        self.__role.down_move()
+        self.__role.show_position()
+
+
+class Jump(GameCommand):
+    """上跳命令"""
+    def execute(self):
+        self.__role.jump_move()
+        self.__role.show_position()
+
+
+class Squat(GameCommand):
+    """下蹲命令"""
+    def execute(self):
+        self.__role.squat_move()
+        self.__role.show_position()
+
+
+class Attack(GameCommand):
+    """攻击命令"""
+    def execute(self):
+        self.__role.attack()
+        self.__role.show_position()
+
+
+class MacroCommand(GameCommand):
+    def __init__(self, role=None):
+        super().__init__(role)
+        self.commands = []
+
+    def add_command(self,command):
+        self.commands.append(command)
+
+    def remove_command(self, command):
+        self.commands.remove(command)
+
+    def execute(self):
+        for command in self.commands:
+            command.excute()
+
+
+class GameInvoker:
+    def __init__(self):
+        self.__command = None
+
+    def set_command(self, command):
+        self.__command = command
+        return self
+
+    def action(self):
+        if self.__command is not None:
+            self.__command.action()
+
+
 def main():
     pass
 
