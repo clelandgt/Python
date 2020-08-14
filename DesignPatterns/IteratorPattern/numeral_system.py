@@ -41,7 +41,7 @@ class Iterator:
         return self.__data[self.__index] if len(self.__data) > self.__index else None
 
     def next(self):
-        if self.index < len(self.__data) - 1:
+        if self.__index < len(self.__data) - 1:
             self.__index += 1
             return True
         else:
@@ -63,7 +63,7 @@ class NumeralSystem:
         customer.set_clinic(click)
         self.__index += 1
         self.__customers.append(customer)
-        print(customer.get_name() + '您好！您已在' + self.__name + '成功挂号，序号: ' + str(customer.get_num() + '请耐心等待！'))
+        print(customer.get_name() + '您好！您已在' + self.__name + '成功挂号，序号: ' + str(customer.get_num()) + '请耐心等待！')
 
     def get_iterator(self):
         return Iterator(self.__customers)
@@ -73,6 +73,15 @@ def main():
     numeral_system = NumeralSystem('挂号台')
     lily = Customer('lily')
     lily.register(numeral_system)
+
+    tom = Customer('tom')
+    tom.register(numeral_system)
+
+    jim = Customer('jim')
+    jim.register(numeral_system)
+
+    xiaohua = Customer('xiao hua')
+    xiaohua.register(numeral_system)
 
     iterator = numeral_system.get_iterator()
     while iterator.next():
