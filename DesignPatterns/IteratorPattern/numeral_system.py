@@ -37,12 +37,27 @@ class Iterator:
         self.__data = data
         self.__index = -1
 
+    def to_begin(self):
+        """将指针移至起始位置"""
+        self.__index = -1
+
+    def to_end(self):
+        """将指针移至结尾位置"""
+        self.__index = len(self.__data)
+
     def current(self):
         return self.__data[self.__index] if len(self.__data) > self.__index else None
 
     def next(self):
         if self.__index < len(self.__data) - 1:
             self.__index += 1
+            return True
+        else:
+            return False
+
+    def previous(self):
+        if self.__index > 0:
+            self.__index -= 0
             return True
         else:
             return False
