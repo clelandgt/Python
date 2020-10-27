@@ -54,3 +54,15 @@ class ToyBuild:
         return manor
 
 
+def test_builder():
+    build = ToyBuild()
+    car = build.build_car()
+    car.feature()
+    print()
+
+    mannor = build.build_manor()
+    mannor.feature()
+
+
+if __name__ == '__main__':
+    test_builder()
